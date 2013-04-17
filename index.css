@@ -1,0 +1,360 @@
+@charset "UTF-8";
+
+body{
+  width: 860px;
+	margin: auto;
+	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
+	background: #EDEEEF;
+}
+
+
+.menu {
+height: 39px;
+}
+
+.länkar {
+text-decoration: none;
+color: black;
+position: relative;
+left: 791px;
+}
+.länkar2 {
+text-decoration: none;
+color: black;
+position: relative;
+left: 0px;
+}
+
+.länkar:hover {
+text-decoration: underline;
+color: orange;
+}
+.länkar2:hover {
+text-decoration: underline;
+color: orange;
+}
+
+nav ul { /* gäller hela menyn */ 
+	list-style: none;
+	display: inline-table;	
+	z-index: 0;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	top: 0px;
+	left: 108px;
+}
+
+
+nav ul ul {
+	display: none; 
+}
+
+nav ul li:hover > ul {
+		display: block; 
+	}
+
+nav ul li li { /* Båda submenuerna */
+width: auto;
+background-color: rgb(255,151,23);
+float: none;
+border-top: 2px solid #FF8C08;
+border-bottom: 0.5px solid #FF8C08;
+}
+	
+nav ul li { /* Enskilda länkarna */
+	float: left;
+	
+}
+
+nav ul li.topmenu {
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+nav ul li ul#nyheter { /* Submenu 1 */
+	position: relative;
+	top: 100%;
+}
+
+nav ul li ul#nyheter li {position: relative; left: -108px;}
+
+nav ul li ul#nyheter :hover {
+background-image: linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -o-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -moz-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -ms-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+}
+
+nav ul li ul#rec { /* Submenu 2 */ 
+	position: relative;
+	top: 100%;
+}
+
+nav ul li ul#rec li {position: relative; left: -108px;}
+
+nav ul li ul#rec :hover {
+background-image: linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -o-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -moz-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+background-image: -ms-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
+}
+
+nav ul li a { /* själva text länken */
+		display: block; 
+		padding:10px 34.5px; /* Längden på  menyn */
+		text-decoration: none;
+		color:rgba(255,255,255,0.6);
+		
+}
+
+nav ul li:hover {
+background-image: linear-gradient(bottom, rgb(255,151,23) 100%, rgb(255,182,51) 100%);
+background-image: -o-linear-gradient(bottom, rgb(255,151,23) 100%, rgb(255,182,51) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(255,151,23) 100%, rgb(255,182,51) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(255,151,23) 100%, rgb(255,182,51) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(255,151,23) 100%, rgb(255,182,51) 100%);
+
+	}
+
+nav ul li:hover a {
+			color: #ffffff;
+}
+
+header  .newzlogo{
+height: 124px;
+z-index: 0;
+position: relative;
+}
+
+header .social{
+position: absolute;
+right: 0px;
+background-color: #2D3239;
+z-index: 4;
+}
+
+header .social{
+
+padding: 5px 0px;
+padding-left: 10px;
+
+}
+
+header .newzlogo .logo {
+display: inline-box;
+width: 50px;
+position: relative;
+left: 210px;
+height: 42px;
+}
+
+.footer {
+background-image:url('bilder/footer_background.png');
+background-repeat: repeat-x;
+height: 55px;
+position: absolute;
+left: 0px;
+width: 100%;
+margin-top: 50px;
+text-align: center;
+}
+.footer  small{color: white; }
+
+
+
+
+.homeintro a h1{
+position: relative;
+left: 0px;
+display:inline-block; 
+color: black;
+z-index: 3;
+margin-top: 50px;
+margin-left: 50px;
+text-align:left;
+z-index: 0;
+}
+
+.homeintro p {
+margin-top:0px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.homeintro img {
+margin-right: 20px;
+margin-top: 50px;
+margin-left: 20px;
+width: 485px;
+height: 300px;
+}
+
+.homeintro a h1:hover {
+text-decoration:underline;
+color: orange;
+}
+
+.homeintro {
+margin-top: 50px;
+margin-bottom:20px;
+z-index: 1;
+background-color: #FFFFFF;
+height: 400px ;
+width: 860px;
+top: 180px;
+box-shadow: 0.5px 0.5px 10px 3px  #999999;
+}
+
+.solointro a h1{
+position: relative;
+left: 0px;
+display:inline-block; 
+color: black;
+z-index: 3;
+margin-top: 20px;
+margin-left: 50px;
+text-align:left;
+}
+
+.solointro p {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.solointro img {
+margin-right: 50px;
+margin-top: 100px;
+width: 300px;
+height: 185px;
+}
+
+.solointro a h1:hover {
+text-decoration:underline;
+color: orange;
+}
+
+.solointro {
+margin-top: 50px;
+margin-bottom: 50px;
+z-index: 1;
+background-color: #FFFFFF;
+height: 750px ;
+width: 860px;
+top: 180px;
+box-shadow: 0.5px 0.5px 10px 3px  #999999;
+}
+
+#menyrad {
+left: 0px;
+top: 124px;
+position: absolute;
+height: 39px;
+width: 100%;
+background: #4b545f;
+background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+
+header .bgheader {
+position: relative;
+height: 118.677px;
+width: 500px;
+z-index: 0;
+}
+
+#bglogo {
+position: absolute;
+left: 0px;
+top: 0px;
+height: 124px;
+width: 100%;
+background: #4b545f;
+background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+z-index: -1;
+}
+
+#kontakt {
+display:inline-block;
+z-index: -2;
+background-color: #FFFFFF;
+height: 800px ;
+width: 860px;
+position: absolute;
+top: 180px;
+box-shadow: 0.5px 0.5px 10px 3px  #999999;
+}
+
+form h1{
+color: orange;
+text-align: center;
+}
+
+form fieldset legend{
+text-align: center;
+}
+
+form fieldset{
+color: orange;
+border-style: none;
+text-align: right;
+padding-right: 150px;
+}
+
+
+
+.backdrop
+		{
+			position:absolute;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:100%;
+			background:#000;
+			opacity: .0;
+			filter:alpha(opacity=0);
+			z-index:50;
+			display:none;
+		}
+ 
+ 
+		.box
+		{
+			position:absolute;
+			top:20%;
+			left:30%;
+			width:500px;
+			height:440px;
+			background:#ffffff;
+			z-index:51;
+			padding:10px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			-moz-box-shadow:0px 0px 5px #444444;
+			-webkit-box-shadow:0px 0px 5px #444444;
+			box-shadow:0px 0px 5px #444444;
+			display:none;
+		}
+ 
+		.close
+		{
+			float:right;
+			margin-right:6px;
+			cursor:pointer;
+		}
+ 
+
+
+
+
+nav ul:after {
+		content: ""; clear: both; display: block;
+}

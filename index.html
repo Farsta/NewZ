@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+ <head>
+ 
+    <meta charset="utf-8" />
+    <title> NewZ.com - For you  </title>
+  <script src="costom.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+	<Link href="index.css"  rel="stylesheet" type="text/css">
+ </head>
+ 
+ <body>
+<script type="text/javascript">
+ 
+			$(document).ready(function(){
+ 
+				$('.lightbox').click(function(){
+					$('.backdrop, .box').animate({'opacity':'.50'}, 300, 'linear');
+					$('.box').animate({'opacity':'1.00'}, 300, 'linear');
+					$('.backdrop, .box').css('display', 'block');
+					jQuery(".box").load("contact.php");
+				});
+ 
+				$('.close').click(function(){
+					close_box();
+				});
+ 
+				$('.backdrop').click(function(){
+					close_box();
+				});
+ 
+			});
+ 
+			function close_box()
+			{
+				$('.backdrop, .box').animate({'opacity':'0'}, 300, 'linear', function(){
+					$('.backdrop, .box').css('display', 'none');
+				});
+			}
+ 
+		</script>
+ 
+
+
+
+<header>
+
+
+
+<div class="social">
+
+		
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FNewz%2F430481323696978&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=29" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:21px;" allowTransparency="true"></iframe>		
+		<a href="https://twitter.com/NewZ" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @NewZ</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</div>
+
+<div class="newzlogo">
+<img src="bilder/newzlogo2.png" class="bgheader">
+</div>
+
+<div id="menyrad"> </div>
+<div id="bglogo"> </div> 
+<nav class="menu">
+	<ul>
+		<li class="topmenu"><a href="index.html">Home</a></li>
+		
+		<li class="topmenu"><a href="#">Nyheter</a>
+		
+			<ul id="nyheter">
+			
+				<li><a href="spel.html">Spel</a></li>
+				<li><a href="film.html">Film</a></li>
+				
+			</ul>
+			
+		</li>
+		
+		<li class="topmenu"><a href="#">Recensioner</a>
+		
+			<ul id="nyheter">
+			
+				<li><a href="#">Spel</a></li>
+				<li><a href="#">Film</a></li>
+				
+			</ul>
+			
+		</li>
+		
+		<li class="topmenu"><a href="v10.html">WeekendTip</a></li>
+		<li class="topmenu"> <a href="#" class="lightbox"> Tipsa </a> </li>
+	</ul>
+</nav>
+</header>
+
+
+
+
+
+<div class="backdrop"></div>
+	<div class="box"><div class="close">x</div>
+	
+<a href="contact.php"></a> 	
+	
+	</div>
+
+
+
+
+<div class="homeintro"> 
+<a href="v10.html"> <h1> Veckans tip v.10 - It's kind of a funny story </h1> </a>
+<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+</p>
+</div>
+
+<div class="homeintro"> 
+<a href="hobbit.html"> <h1> The Hobbit </h1> </a>
+<img src="bilder/hobbit.jpg" align="right">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+</div>
+
+<div class="homeintro"> 
+<a href="cod.html"> <h1> Nytt CoD </h1> </a>
+<img src="bilder/cod.jpg" align="right">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+</div>
+
+
+
+<a href="sida2.html" class="länkar"> Nästa Sida </a>
+
+
+
+<footer class="footer">
+
+
+	
+	
+		<small> &copy; Mattias Ewers & Sebastian Lind</small>
+	
+
+			
+</footer>
+
+</body>
+</html>

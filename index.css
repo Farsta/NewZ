@@ -1,7 +1,7 @@
-@charset "UTF-8";
+﻿	@charset "UTF-8";
 
-body{
-  width: 860px;
+body {
+	width: 860px;
 	margin: auto;
 	font-family: "Helvetica Neue", "Liberation Sans", Calibri, Arial, sans-serif;
 	background: #EDEEEF;
@@ -12,39 +12,67 @@ body{
 height: 39px;
 }
 
-.länkar {
-text-decoration: none;
-color: black;
-position: relative;
-left: 791px;
-}
-.länkar2 {
-text-decoration: none;
-color: black;
-position: relative;
-left: 0px;
-}
-
-.länkar:hover {
-text-decoration: underline;
-color: orange;
-}
-.länkar2:hover {
-text-decoration: underline;
-color: orange;
-}
-
 nav ul { /* gäller hela menyn */ 
 	list-style: none;
 	display: inline-table;	
-	z-index: 0;
-	margin:0px;
+	z-index: 2;
+	margin: 0px;
 	padding:0px;
 	position: relative;
 	top: 0px;
-	left: 108px;
+	left: 0px;
 }
 
+/* Här börjar koden för att se så att de funkar olika webbläsare */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Här slutar kod delen som vi snodde herp derp*/
 
 nav ul ul {
 	display: none; 
@@ -74,14 +102,14 @@ nav ul li.topmenu {
 	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
 }
 
-nav ul li ul#nyheter { /* Submenu 1 */
-	position: relative;
+nav ul li ul .scroll { /* Submenu 1 */
+	position: center;
 	top: 100%;
 }
 
-nav ul li ul#nyheter li {position: relative; left: -108px;}
+nav ul li ul .scroll li {position: center; left: -108px;}
 
-nav ul li ul#nyheter :hover {
+nav ul li ul .scroll :hover {
 background-image: linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
 background-image: -o-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
 background-image: -moz-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
@@ -89,7 +117,7 @@ background-image: -webkit-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,9
 background-image: -ms-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
 }
 
-nav ul li ul#rec { /* Submenu 2 */ 
+/* nav ul li ul#rec { Submenu 2 
 	position: relative;
 	top: 100%;
 }
@@ -102,7 +130,8 @@ background-image: -o-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 
 background-image: -moz-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
 background-image: -webkit-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
 background-image: -ms-linear-gradient(bottom, rgb(255,140,8) 100%, rgb(181,98,2) 69%);
-}
+} */
+
 
 nav ul li a { /* själva text länken */
 		display: block; 
@@ -127,22 +156,19 @@ nav ul li:hover a {
 
 header  .newzlogo{
 height: 124px;
-z-index: 0;
+z-index: 3;
 position: relative;
 }
 
-header .social{
-position: absolute;
-right: 0px;
-background-color: #2D3239;
-z-index: 4;
-}
 
-header .social{
-
-padding: 5px 0px;
-padding-left: 10px;
-
+header .newzlogo h1{ 
+position: relative;
+top: 43px;
+padding: 0px;
+margin: 0px;
+color: orange;
+z-index: 2;
+text-align: center;
 }
 
 header .newzlogo .logo {
@@ -157,57 +183,45 @@ height: 42px;
 background-image:url('bilder/footer_background.png');
 background-repeat: repeat-x;
 height: 55px;
+clear: both;
 position: absolute;
 left: 0px;
 width: 100%;
-margin-top: 50px;
-text-align: center;
 }
-.footer  small{color: white; }
+.footer small{color: white; background-color: #2D3239; position: relative; }
 
-
+.footer div {
+text-align: center;
+padding: 6px 0px;
+}
 
 
 .homeintro a h1{
-position: relative;
+position: top;
 left: 0px;
 display:inline-block; 
 color: black;
 z-index: 3;
-margin-top: 50px;
+margin-top: 20px;
 margin-left: 50px;
 text-align:left;
-z-index: 0;
 }
 
 .homeintro p {
-margin-top:0px;
 margin-left: 50px;
 margin-right: 50px;
 }
 
 .homeintro img {
-margin-right: 20px;
-margin-top: 50px;
-margin-left: 20px;
-width: 485px;
-height: 300px;
+margin-right: 50px;
+margin-top: 100px;
+width: 300px;
+height: 185px;
 }
 
 .homeintro a h1:hover {
 text-decoration:underline;
 color: orange;
-}
-
-.homeintro {
-margin-top: 50px;
-margin-bottom:20px;
-z-index: 1;
-background-color: #FFFFFF;
-height: 400px ;
-width: 860px;
-top: 180px;
-box-shadow: 0.5px 0.5px 10px 3px  #999999;
 }
 
 .solointro a h1{
@@ -249,6 +263,17 @@ top: 180px;
 box-shadow: 0.5px 0.5px 10px 3px  #999999;
 }
 
+.homeintro {
+margin-top: 50px;
+margin-bottom: 50px;
+z-index: 1;
+background-color: #FFFFFF;
+height: 400px ;
+width: 860px;
+top: 180px;
+box-shadow: 0.5px 0.5px 10px 3px  #999999;
+}
+
 #menyrad {
 left: 0px;
 top: 124px;
@@ -262,6 +287,7 @@ background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
 }
 
 header .bgheader {
+left: 180px;
 position: relative;
 height: 118.677px;
 width: 500px;
@@ -291,69 +317,20 @@ position: absolute;
 top: 180px;
 box-shadow: 0.5px 0.5px 10px 3px  #999999;
 }
-
-form h1{
-color: orange;
-text-align: center;
+form {
+display:inline-block;
+z-index: -2;
+background-color: #FFFFFF;
+height: 800px ;
+width: 860px;
+position: absolute;
+top: 180px;
+box-shadow: 0.5px 0.5px 10px 3px  #999999;
 }
-
-form fieldset legend{
-text-align: center;
-}
-
 form fieldset{
-color: orange;
-border-style: none;
-text-align: right;
-padding-right: 150px;
+border-radius: 10px;
+
 }
-
-
-
-.backdrop
-		{
-			position:absolute;
-			top:0px;
-			left:0px;
-			width:100%;
-			height:100%;
-			background:#000;
-			opacity: .0;
-			filter:alpha(opacity=0);
-			z-index:50;
-			display:none;
-		}
- 
- 
-		.box
-		{
-			position:absolute;
-			top:20%;
-			left:30%;
-			width:500px;
-			height:440px;
-			background:#ffffff;
-			z-index:51;
-			padding:10px;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-			-moz-box-shadow:0px 0px 5px #444444;
-			-webkit-box-shadow:0px 0px 5px #444444;
-			box-shadow:0px 0px 5px #444444;
-			display:none;
-		}
- 
-		.close
-		{
-			float:right;
-			margin-right:6px;
-			cursor:pointer;
-		}
- 
-
-
-
 
 nav ul:after {
 		content: ""; clear: both; display: block;
